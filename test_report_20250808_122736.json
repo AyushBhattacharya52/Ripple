@@ -1,0 +1,402 @@
+{
+  "summary": {
+    "total_tests": 35,
+    "passed": 13,
+    "failed": 22,
+    "success_rate": 37.142857142857146,
+    "duration": 0.10757112503051758,
+    "timestamp": "2025-08-08T12:27:36.138747"
+  },
+  "detailed_results": [
+    {
+      "test": "Register user: alice_smith",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'register_user'",
+      "timestamp": "2025-08-08T12:27:36.026786",
+      "data": null
+    },
+    {
+      "test": "Register user: bob_johnson",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'register_user'",
+      "timestamp": "2025-08-08T12:27:36.027779",
+      "data": null
+    },
+    {
+      "test": "Register user: charlie_dev",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'register_user'",
+      "timestamp": "2025-08-08T12:27:36.028292",
+      "data": null
+    },
+    {
+      "test": "Duplicate user registration",
+      "success": true,
+      "message": "Correctly rejected: 'DataManager' object has no attribute 'register_user'",
+      "timestamp": "2025-08-08T12:27:36.028292",
+      "data": null
+    },
+    {
+      "test": "Login: alice_smith",
+      "success": false,
+      "message": "DataManager.authenticate_user() missing 1 required positional argument: 'password'",
+      "timestamp": "2025-08-08T12:27:36.028292",
+      "data": null
+    },
+    {
+      "test": "Login: bob.johnson@company.com",
+      "success": false,
+      "message": "DataManager.authenticate_user() missing 1 required positional argument: 'password'",
+      "timestamp": "2025-08-08T12:27:36.028292",
+      "data": null
+    },
+    {
+      "test": "Invalid login: alice_smith",
+      "success": true,
+      "message": "Correctly rejected: DataManager.authenticate_user() missing 1 required positional argument: 'password'",
+      "timestamp": "2025-08-08T12:27:36.028292",
+      "data": null
+    },
+    {
+      "test": "Invalid login: nonexistent_user",
+      "success": true,
+      "message": "Correctly rejected: DataManager.authenticate_user() missing 1 required positional argument: 'password'",
+      "timestamp": "2025-08-08T12:27:36.028292",
+      "data": null
+    },
+    {
+      "test": "Invalid login: fake@email.com",
+      "success": true,
+      "message": "Correctly rejected: DataManager.authenticate_user() missing 1 required positional argument: 'password'",
+      "timestamp": "2025-08-08T12:27:36.029624",
+      "data": null
+    },
+    {
+      "test": "Create event: Python Workshop for Beginners",
+      "success": {
+        "id": "f68e0fd2-11ad-4bb8-8436-18574ea33e94",
+        "title": "Python Workshop for Beginners",
+        "description": "Learn Python basics with hands-on coding exercises. Perfect for newcomers to programming.",
+        "date": "2025-08-16",
+        "time": "14:00",
+        "location": "Tech Hub Downtown, Room 301",
+        "category": "Technology",
+        "max_participants": 25,
+        "current_participants": 0,
+        "creator_id": "alice_smith",
+        "creator_name": "Alice Smith",
+        "latitude": null,
+        "longitude": null,
+        "city": "",
+        "country": "",
+        "created_at": "2025-08-08T12:27:36.030257",
+        "is_active": true
+      },
+      "message": "Event creation successful",
+      "timestamp": "2025-08-08T12:27:36.031497",
+      "data": {
+        "title": "Python Workshop for Beginners",
+        "description": "Learn Python basics with hands-on coding exercises. Perfect for newcomers to programming.",
+        "date": "2025-08-16",
+        "time": "14:00",
+        "location": "Tech Hub Downtown, Room 301",
+        "category": "Technology",
+        "max_participants": 25,
+        "creator_id": "alice_smith",
+        "creator_name": "Alice Smith"
+      }
+    },
+    {
+      "test": "Create event: Digital Marketing Strategies 2025",
+      "success": {
+        "id": "b0a428ce-52d7-4dfe-a547-cc3f73ed5e22",
+        "title": "Digital Marketing Strategies 2025",
+        "description": "Explore the latest trends in digital marketing, including AI-powered campaigns and social media strategies.",
+        "date": "2025-08-23",
+        "time": "10:00",
+        "location": "Business Center, Conference Room A",
+        "category": "Business",
+        "max_participants": 50,
+        "current_participants": 0,
+        "creator_id": "bob_johnson",
+        "creator_name": "Bob Johnson",
+        "latitude": null,
+        "longitude": null,
+        "city": "",
+        "country": "",
+        "created_at": "2025-08-08T12:27:36.043988",
+        "is_active": true
+      },
+      "message": "Event creation successful",
+      "timestamp": "2025-08-08T12:27:36.044331",
+      "data": {
+        "title": "Digital Marketing Strategies 2025",
+        "description": "Explore the latest trends in digital marketing, including AI-powered campaigns and social media strategies.",
+        "date": "2025-08-23",
+        "time": "10:00",
+        "location": "Business Center, Conference Room A",
+        "category": "Business",
+        "max_participants": 50,
+        "creator_id": "bob_johnson",
+        "creator_name": "Bob Johnson"
+      }
+    },
+    {
+      "test": "Create event: Community Coffee Chat",
+      "success": {
+        "id": "b65265e6-2e56-4ae4-8eac-a09d964a4cc9",
+        "title": "Community Coffee Chat",
+        "description": "Casual networking event for local professionals. Come meet new people and share ideas over coffee.",
+        "date": "2025-08-12",
+        "time": "09:00",
+        "location": "Central Caf\u00e9, Main Street",
+        "category": "Networking",
+        "max_participants": 30,
+        "current_participants": 0,
+        "creator_id": "charlie_dev",
+        "creator_name": "Charlie Wilson",
+        "latitude": null,
+        "longitude": null,
+        "city": "",
+        "country": "",
+        "created_at": "2025-08-08T12:27:36.053340",
+        "is_active": true
+      },
+      "message": "Event creation successful",
+      "timestamp": "2025-08-08T12:27:36.063081",
+      "data": {
+        "title": "Community Coffee Chat",
+        "description": "Casual networking event for local professionals. Come meet new people and share ideas over coffee.",
+        "date": "2025-08-12",
+        "time": "09:00",
+        "location": "Central Caf\u00e9, Main Street",
+        "category": "Networking",
+        "max_participants": 30,
+        "creator_id": "charlie_dev",
+        "creator_name": "Charlie Wilson"
+      }
+    },
+    {
+      "test": "Create event: React.js Advanced Patterns",
+      "success": {
+        "id": "60f9baed-291e-4684-b67a-b8378bffd64e",
+        "title": "React.js Advanced Patterns",
+        "description": "Deep dive into advanced React patterns including hooks, context, and performance optimization.",
+        "date": "2025-08-30",
+        "time": "18:30",
+        "location": "Innovation Lab, Building B",
+        "category": "Technology",
+        "max_participants": 20,
+        "current_participants": 0,
+        "creator_id": "charlie_dev",
+        "creator_name": "Charlie Wilson",
+        "latitude": null,
+        "longitude": null,
+        "city": "",
+        "country": "",
+        "created_at": "2025-08-08T12:27:36.071638",
+        "is_active": true
+      },
+      "message": "Event creation successful",
+      "timestamp": "2025-08-08T12:27:36.071638",
+      "data": {
+        "title": "React.js Advanced Patterns",
+        "description": "Deep dive into advanced React patterns including hooks, context, and performance optimization.",
+        "date": "2025-08-30",
+        "time": "18:30",
+        "location": "Innovation Lab, Building B",
+        "category": "Technology",
+        "max_participants": 20,
+        "creator_id": "charlie_dev",
+        "creator_name": "Charlie Wilson"
+      }
+    },
+    {
+      "test": "Create event: Startup Pitch Night",
+      "success": {
+        "id": "08225a14-567d-45ac-aade-751bacf87f9b",
+        "title": "Startup Pitch Night",
+        "description": "Watch local entrepreneurs pitch their innovative ideas to a panel of investors and mentors.",
+        "date": "2025-09-06",
+        "time": "19:00",
+        "location": "Entrepreneur Center Auditorium",
+        "category": "Business",
+        "max_participants": 100,
+        "current_participants": 0,
+        "creator_id": "alice_smith",
+        "creator_name": "Alice Smith",
+        "latitude": null,
+        "longitude": null,
+        "city": "",
+        "country": "",
+        "created_at": "2025-08-08T12:27:36.088903",
+        "is_active": true
+      },
+      "message": "Event creation successful",
+      "timestamp": "2025-08-08T12:27:36.088903",
+      "data": {
+        "title": "Startup Pitch Night",
+        "description": "Watch local entrepreneurs pitch their innovative ideas to a panel of investors and mentors.",
+        "date": "2025-09-06",
+        "time": "19:00",
+        "location": "Entrepreneur Center Auditorium",
+        "category": "Business",
+        "max_participants": 100,
+        "creator_id": "alice_smith",
+        "creator_name": "Alice Smith"
+      }
+    },
+    {
+      "test": "Incomplete event creation",
+      "success": true,
+      "message": "Correctly rejected: 'date'",
+      "timestamp": "2025-08-08T12:27:36.111750",
+      "data": null
+    },
+    {
+      "test": "Get all events",
+      "success": true,
+      "message": "Retrieved 7 events",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": {
+        "count": 7
+      }
+    },
+    {
+      "test": "Get events by category: Technology",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_events_by_category'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get events by category: Business",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_events_by_category'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get events by category: Networking",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_events_by_category'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get events by creator: alice_smith",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_events_by_creator'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get events by creator: bob_johnson",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_events_by_creator'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get events by creator: charlie_dev",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_events_by_creator'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Event registration: alice_smith -> asd",
+      "success": false,
+      "message": "DataManager.register_for_event() takes 2 positional arguments but 3 were given",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Event registration: bob_johnson -> asd",
+      "success": false,
+      "message": "DataManager.register_for_event() takes 2 positional arguments but 3 were given",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Event registration: charlie_dev -> Test Event",
+      "success": false,
+      "message": "DataManager.register_for_event() takes 2 positional arguments but 3 were given",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Duplicate event registration",
+      "success": true,
+      "message": "Correctly rejected: DataManager.register_for_event() takes 2 positional arguments but 3 were given",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get created events: alice_smith",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_user_created_events'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get created events: bob_johnson",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_user_created_events'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get created events: charlie_dev",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_user_created_events'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get registered events: alice_smith",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_user_registered_events'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get registered events: bob_johnson",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_user_registered_events'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Get registered events: charlie_dev",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_user_registered_events'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Event update test",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'update_event'",
+      "timestamp": "2025-08-08T12:27:36.113266",
+      "data": null
+    },
+    {
+      "test": "Cancel event test",
+      "success": false,
+      "message": "'DataManager' object has no attribute 'get_events_by_creator'",
+      "timestamp": "2025-08-08T12:27:36.119302",
+      "data": null
+    },
+    {
+      "test": "Bulk query performance",
+      "success": true,
+      "message": "10 queries completed in 0.01 seconds",
+      "timestamp": "2025-08-08T12:27:36.133358",
+      "data": {
+        "duration_seconds": 0.012586116790771484,
+        "queries": 10
+      }
+    }
+  ]
+}
