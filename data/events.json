@@ -253,5 +253,29 @@
     "country": "",
     "created_at": "2025-08-08T12:43:50.582052",
     "is_active": true
+  },
+  {
+    "name": "adsd",
+    "contact": "asd",
+    "date": "asd",
+    "title": "asd",
+    "location": "asd",
+    "description": "asd",
+    "id": "ac2b333a-ed3b-49ec-9094-ad8806dc2d7a",
+    "created_at": "2025-08-20T11:13:23.186621",
+    "is_active": true,
+    "current_participants": 0
+  },
+  {
+    "name": "hi",
+    "contact": "hi",
+    "date": "hi",
+    "title": "hi",
+    "location": "hi",
+    "description": "hi",
+    "id": "ecabc92d-e514-4ab7-b0eb-79fb684913a1",
+    "created_at": "2025-08-20T17:50:17.500638",
+    "is_active": true,
+    "current_participants": 0
   }
 ]
